@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monica Gabriel</title>
+  <meta name="description" content="Monica's Portfolio, a creative and frontend developer based in Portugal">
+  <meta name="author" content="Monica Gabriel">
+  <meta name="keywords" content="photographer,videographer,designer,developer,creative">
+
+  <meta property="og:title" content="Monica Gabriel" />
+  <meta property="og:url" content="https://monica.pt" />
+  <meta property="og:image" content="https://monica.pt/img/monica-og.jpg" />
+  <meta property="og:description" content="Monica's Portfolio, a creative and frontend developer based in Portugal" />
+  <meta property="og:site_name" content="Monica" />
+
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+  <!-- Ligthbox -->
+  <link rel="stylesheet" href="css/simpleLightbox.min.css">
+  <!-- Animate on Scroll -->
+  <link rel="stylesheet" href="css/aos.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.min.css">
+  <noscript>
+    <style>[data-aos^=fade][data-aos^=fade] {opacity: 1} [data-aos=fade-up]{transform:translateY(0)}</style>
+  </noscript>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" data-aos="fade" data-aos-delay="800">
+    <div class="container">
+      <div class="logo">
+        <a href="/">Monica</a>
+      </div>
+
+      <div class="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#about" class="anchor">about</a>
+        <a href="#frontend" class="anchor">front end</a>
+        <a href="#creative" class="anchor">creative</a>
+        <a href="#" id="contact-toggle">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="container">
+
+      <p class="color">hello</p>
+      <h3 class="line">let's chat</h3>
+
+      <form method="post" action="mail.php" spellcheck="false" autocapitalize="off">
+        <span class="close"></span>
+
+        <input type="text" name="name" placeholder="name" autocomplete="off" required>
+        <input type="email" name="email" placeholder="email" autocomplete="email" required>
+        <textarea name="message" placeholder="message" required></textarea>
+        <input type="submit" name="submit" value="send">
+        <!-- honeypot -->
+        <input type="text" name="pot" class="hide-pot">
+      </form>
+
+      <div class="spacer"></div>
+
+      <div class="social-links">
+        <a href='https://github.com/msgabriel' target='_blank' rel="noreferrer">
+          <span class='icon github'></span>
+        </a>
+        <a href='https://codepen.io/msgabriel/' target='_blank' rel="noreferrer">
+          <span class='icon codepen'></span>
+        </a>
+        <a href='https://industriacriativa.pt/msgabriel' target='_blank' rel="noreferrer">
+          <span class='icon industria'></span>
+        </a>
+        <a href='https://www.artstation.com/msgabriel' target='_blank' rel="noreferrer">
+          <span class='icon artstation'></span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="contact-msg">
+    <div class="container">
+      <span class="close"></span>
+      <h3 class="line">Thank you!</h3>
+      <p>Your message was sent</p>
+    </div>
+  </div>
+
+  <!-- ABOUT  -->
+  <section id="about" class="is-fullheight">
+    <div class="container" data-aos="fade-up">
+
+      <img src="img/portrait.jpg" class="portrait" alt="profile picture" width="300" height="300">
+      <p class="color">hello, i'm</p>
+      <div class="logo">
+        <img src="img/logo.svg" alt="monica">
+      </div>
+      <p class="lead line">a creative <span class="color">&amp;</span> frontend developer that loves everything visual</p>
+      <p>In the past I've worked as a photographer and videographer, but my fascination with computers and design lead
+        me
+        to explore the frontend development world.</p>
+      <p>I'm also a hobbyist illustrator, plant lover and video games enthusiast.</p>
+      <div class="spacer"></div>
+      <div class="skills">
+        <p class="lead line">what I do</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS/SASS</li>
+          <li>Bootstrap</li>
+          <li>Javascript</li>
+          <li>Jquery</li>
+          <li>Git</li>
+        </ul>
+        <ul>
+          <li>Photoshop</li>
+          <li>Premiere</li>
+          <li>Design</li>
+          <li>Illustration</li>
+          <li>Photography</li>
+        </ul>
+      </div>
+      <div class="spacer"></div>
+      <div class="double-spacer"></div>
+      <div class="skip-link" data-aos="fade" data-aos-easing="ease" data-aos-delay="800">
+        <a href="#frontend" class="anchor">portfolio</a>
+        <span class="arrow"></span>
+      </div>
+  </section>
+
+  <!-- WEB -->
+  <section id="frontend" class="is-fullheight">
+    <div data-aos="fade-up">
+      <p class="color">Frontend</p>
+      <h2 class="line">Portfolio</h2>
+      <hr>
+
+      <div class="container is-grid">
+
+        <div class="project">
+          <div class="project-img">
+            <a href="https://msgabriel.github.io/calculator/" target="_blank" rel="noreferrer">
+              <div class="overlay"></div>
+              <img data-src="img/calculator.jpg" alt="calculator" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Calculator</p>
+          <p class="project-tag app">web app</p>
+        </div>
+
+        <div class="project carga">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="https://msgabriel.github.io/quote-generator/" target="_blank" rel="noreferrer">
+              <img data-src="img/quote-machine.jpg" alt="quote machine" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Quote Machine</p>
+          <p class="project-tag site">web app</p>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="https://msgabriel.github.io/rock-paper-scissors/" target="_blank" rel="noreferrer">
+              <img data-src="img/rock-paper-scissors.jpg" alt="rock paper scissors game" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Rock Paper Scissors</p>
+          <p class="project-tag app">web app</p>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="https://msgabriel.github.io/etch-a-sketch/" target="_blank" rel="noreferrer">
+              <img data-src="img/etch-a-sketch.jpg" alt="Etch-a-Sketch" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Etch-a-Sketch</p>
+          <p class="project-tag">web app</p>
+        </div>
+
+        <div class="project idea">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="https://ideatomik.net/" target="_blank" rel="noreferrer">
+              <img data-src="img/ideatomik.jpg" alt="Ideatomik website" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Ideatomik</p>
+          <p class="project-tag">website</p>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="https://codepen.io/msgabriel/full/pKzdwJ" target="_blank" rel="noreferrer">
+              <img data-src="img/weather.jpg" alt="weather forecast" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Weather Forecast</p>
+          <p class="project-tag">web app</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ART -->
+  <section id="creative" class="is-fullheight">
+    <div data-aos="fade-up">
+      <p class="color">Creative</p>
+      <h2 class="line">Portfolio</h2>
+      <hr>
+
+      <div class="container is-grid">
+
+        <div class="project">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="miss-frimor">
+              <img data-src="img/misses.jpg" alt="miss frimor" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Miss Frimor</p>
+          <p class="project-tag">photography</p>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="design">
+              <img data-src="img/design.jpg" alt="design" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Design</p>
+          <p class="project-tag">graphic + web</p>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="events">
+              <img data-src="img/events.jpg" alt="events" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Events</p>
+          <p class="project-tag">photography</p>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="city-wanderings">
+              <img data-src="img/city.jpg" alt="city wanderings" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">City Wanderings</p>
+          <p class="project-tag">photography</p>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="illustration">
+              <img data-src="img/ilustration.jpg" alt="illustration" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Illustration</p>
+          <p class="project-tag">digital</p>
+        </div>
+
+        <div class="project">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="quiet-places">
+              <img data-src="img/silent.jpg" alt="quiet places" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Quiet Places</p>
+          <p class="project-tag">photography</p>
+        </div>
+
+        <div class="project gallery">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="https://www.youtube.com/embed/TZ8j1xc79EU?autoplay=true">
+              <img data-src="img/juventude.jpg" alt="semana juventude rio maior" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Semana da Juventude</p>
+          <p class="project-tag">aftermovie</p>
+        </div>
+
+        <div class="project gallery">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="https://www.youtube.com/embed/9Al0-m3TDRU?autoplay=true">
+              <img data-src="img/fragmentos.jpg" alt="short film Fragmentos" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Fragmentos</p>
+          <p class="project-tag">short-film</p>
+        </div>
+
+        <div class="project gallery">
+          <div class="project-img">
+            <div class="overlay"></div>
+            <a href="https://www.youtube.com/embed/uK4uYxyVC24?autoplay=true">
+              <img data-src="img/unbedingt.jpg" alt="music video Unbedingt" width="600" height="400" class="lazyload">
+            </a>
+          </div>
+          <p class="project-title">Unbedingt</p>
+          <p class="project-tag">music video</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href='https://github.com/msgabriel' title="github" target='_blank' rel="noreferrer">
+          <span class='icon github'></span>
+        </a>
+        <a href='https://codepen.io/msgabriel/' title="codepen" target='_blank' rel="noreferrer">
+          <span class='icon codepen'></span>
+        </a>
+        <a href='https://industriacriativa.pt/msgabriel' title="industria criativa" target='_blank' rel="noreferrer">
+          <span class='icon industria'></span>
+        </a>
+        <a href='https://www.artstation.com/msgabriel' title="artstation" target='_blank' rel="noreferrer">
+          <span class='icon artstation'></span>
+        </a>
+      </div>
+      <div class="copy">
+        <p>Mónica Gabriel &copy; 2014 -
+          <script>document.write(new Date().getFullYear())</script>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="libs/aos.js"></script>
+  <script src="libs/simpleLightbox.min.js"></script>
+  <script src="libs/autosize.min.js"></script>
+  <script src="libs/lazysizes.min.js"></script>
+  <script>
+    // animate on scroll
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      delay: 400,
+    });
+    // lightbox
+    new SimpleLightbox({ elements: '.gallery a' });
+    // autoresize textarea
+    autosize(document.querySelector('textarea'));
+  </script>
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

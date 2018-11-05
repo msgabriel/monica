@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /mail.php
+Disallow: /font
+Disallow: /404page.html
