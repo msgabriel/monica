@@ -259,7 +259,7 @@ body {
   align-items: center;
 }
 /* honeyopot */
-.hide-pot {
+.hidden {
   display: none !important;
 }
 

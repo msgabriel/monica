@@ -26,7 +26,7 @@
   <!-- Animate on Scroll -->
   <link rel="stylesheet" href="css/aos.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="stylesheet" href="/css/main.css">
 
 </head>
 
@@ -61,12 +61,16 @@
       <p class="color">hello</p>
       <h3 class="line">let's chat</h3>
 
-      <form method="post" action="mail.php" spellcheck="false" autocapitalize="off">
+      <form action="index.html#mailsuccess" method="post" spellcheck="false" autocapitalize="off" netlify-honeypot="bot-field"
+        netlify>
         <span class="close"></span>
+
         <input type="text" name="name" placeholder="name" autocomplete="off" required>
-        <input type="email" name="email" placeholder="email" required>
+        <input type="email" name="email" placeholder="email" autocomplete="email" required>
         <textarea name="message" placeholder="message" required></textarea>
         <input type="submit" name="submit" value="send">
+        <!-- honeypot -->
+        <input type="text" name="bot-field" class="hidden">
       </form>
 
       <div class="spacer"></div>
@@ -216,7 +220,7 @@
     //autosize textarea
     autosize(document.querySelector('textarea'));
   </script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
