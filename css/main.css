@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Barlow Semi Condensed";
+  font-display: auto;
   src: url(/font/BarlowSemiCondensed-regular.woff2) format("woff2"),
     url(/font/BarlowSemiCondensed-regular.woff) format("woff"),
     url(/font/BarlowSemiCondensed-regular.ttf) format("truetype");
@@ -7,6 +8,7 @@
 }
 @font-face {
   font-family: "Barlow Semi Condensed";
+  font-display: auto;
   src: url(/font/BarlowSemiCondensed-medium.woff2) format("woff2"),
     url(/font/BarlowSemiCondensed-medium.woff) format("woff"),
     url(/font/BarlowSemiCondensed-medium.ttf) format("truetype");
@@ -14,7 +16,7 @@
 }
 
 :root {
-  --accent: #5644fa; /* a74afd*/
+  --accent: #5644fa;
   --light: #dcdeee;
   --dark: #282831;
   --medium: #b4b6ca;
@@ -108,7 +110,6 @@ body {
   background: #fff;
   color: var(--dark);
   font: 15px "Barlow Semi Condensed", sans-serif;
-  font-display: swap;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.15em;
