@@ -90,3 +90,7 @@ if (hash === "#mailsuccess") {
   status.style.display = "none";
   document.body.classList.remove("noscroll");
 }
+
+// get current year
+const date = new Date().getFullYear();
+document.getElementById("current-year").textContent = date;
