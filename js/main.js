@@ -1,6 +1,8 @@
-// smooth scrolling
-const anchor = document.querySelectorAll(".anchor");
-anchor.forEach(link => {
+// smooth scrolling & active class
+const anchors = document.querySelectorAll(".anchor");
+const sections = document.querySelectorAll("section");
+
+anchors.forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
 
@@ -10,6 +12,22 @@ anchor.forEach(link => {
     });
   });
 });
+
+function changeActiveLink() {
+  let index = sections.length;
+  const isHome = document.querySelector("#about");
+
+  if (isHome) {
+    while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+  
+    anchors.forEach((link) => link.classList.remove('active'));
+    anchors[index].classList.add('active');
+  }
+}
+
+// assign active class to nav link while scrolling
+changeActiveLink();
+window.addEventListener('scroll', changeActiveLink);
 
 // toggle menu
 const nav = document.querySelector("#navbar");
@@ -72,8 +90,8 @@ function hideModal(e) {
     contact.style.display = "none";
     document.body.classList.remove("noscroll");
     status.style.display = "none";
-    window.location.hash = "";
-    window.history.pushState(null, "", window.location.href.replace("#", ""));
+    location.hash = "";
+    history.pushState("", document.title, window.location.pathname + window.location.search);
   }
 }
 
