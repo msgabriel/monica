@@ -92,8 +92,8 @@ function hideModal(e) {
     contact.style.display = "none";
     document.body.classList.remove("noscroll");
     status.style.display = "none";
-    window.location.hash = "";
-    window.history.pushState(null, "", window.location.href.replace("#", ""));
+    location.hash = "";
+    history.pushState("", document.title, window.location.pathname + window.location.search);
   }
 }
 
