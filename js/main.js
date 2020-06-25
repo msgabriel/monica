@@ -10,8 +10,6 @@ anchors.forEach(link => {
       behavior: "smooth",
       block: "start"
     });
-
-    history.pushState("", document.title, window.location.pathname + window.location.search);
   });
 });
 
