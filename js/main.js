@@ -11,17 +11,20 @@ anchors.forEach(link => {
       block: "start"
     });
 
-    target = e.target.hash;
+    location.hash = "";
   });
 });
 
 function changeActiveLink() {
   let index = sections.length;
+  const isHome = document.querySelector("#about");
 
-  while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+  if (isHome) {
+    while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
   
-  anchors.forEach((link) => link.classList.remove('active'));
-  anchors[index].classList.add('active');
+    anchors.forEach((link) => link.classList.remove('active'));
+    anchors[index].classList.add('active');
+  }
 }
 
 // assign active class to nav link while scrolling
