@@ -11,7 +11,7 @@ anchors.forEach(link => {
       block: "start"
     });
 
-    window.location.href.split('#')[0]
+    history.pushState("", document.title, window.location.pathname + window.location.search);
   });
 });
 
