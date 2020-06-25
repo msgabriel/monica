@@ -11,7 +11,7 @@ anchors.forEach(link => {
       block: "start"
     });
 
-    location.hash = "";
+    window.location.href.split('#')[0]
   });
 });
 
