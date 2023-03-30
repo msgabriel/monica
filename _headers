@@ -1,0 +1,9 @@
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+
+  Link: </css/main.css>; rel=preload; as=style
+  Link: </js/main.js>; rel=preload; as=script
+  Link: </img/portrait.jpg>; rel=preload; as=image

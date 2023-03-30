@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illustrations | Monica Gabriel</title>
+    <meta name="description" content="Monica's Portfolio, a creative and front-end developer based in Portugal" />
+    <meta name="author" content="Monica Gabriel" />
+    <meta name="keywords" content="photographer,videographer,designer,developer,creative" />
+
+    <meta property="og:title" content="Monica Gabriel" />
+    <meta property="og:url" content="https://monica.pt" />
+    <meta property="og:image" content="https://monica.pt/img/monica-og.jpg" />
+    <meta
+      property="og:description"
+      content="Monica's Portfolio, a creative and front-end developer based in Portugal" />
+    <meta property="og:site_name" content="Monica" />
+
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <!-- Ligthbox -->
+    <link rel="stylesheet" href="css/simpleLightbox.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="/">Monica</a>
+        </div>
+
+        <div class="nav-toggle">
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="sr-only">menu</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="/#about">about</a>
+          <a href="/#frontend">front end</a>
+          <a href="/#creative">creative</a>
+          <a href="#" id="contact-toggle">contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="container">
+        <p class="color">hello</p>
+        <h3 class="line">let's chat</h3>
+
+        <form
+          action="/#mailsuccess"
+          method="post"
+          name="contact"
+          spellcheck="false"
+          autocapitalize="off"
+          netlify-honeypot="bot-field"
+          netlify>
+          <span class="close"></span>
+
+          <label for="name">name</label>
+          <input type="text" name="name" id="name" autocomplete="off" required />
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" autocomplete="email" required />
+          <label for="message">message</label>
+          <textarea name="message" id="message" required rows="4"></textarea>
+          <button type="submit" name="submit">send</button>
+          <!-- honeypot -->
+          <input type="text" name="bot-field" class="hidden" />
+        </form>
+      </div>
+    </div>
+
+    <div id="contact-msg">
+      <div class="container">
+        <span class="close">close</span>
+        <h3 class="line">Thank you!</h3>
+        <p>Your message was sent</p>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <section id="portfolio">
+      <header>
+        <div class="container">
+          <h2 class="line">Illustrations</h2>
+          <blockquote>
+            Talent is a pursued interest. Anything that you're willing to practice, you can do.
+            <cite>Bob Ross</cite>
+          </blockquote>
+        </div>
+      </header>
+      <div class="container is-grid gallery">
+        <div>
+          <a href="img/Drawings/i01.jpg">
+            <img src="img/Drawings/i01.jpg" />
+          </a>
+        </div>
+        <div>
+          <a href="img/Drawings/i03.jpg">
+            <img src="img/Drawings/i03.jpg" />
+          </a>
+        </div>
+        <div>
+          <a href="img/Drawings/i04.jpg">
+            <img src="img/Drawings/i04.jpg" />
+          </a>
+        </div>
+        <div>
+          <a href="img/Drawings/i05.jpg">
+            <img src="img/Drawings/i05.jpg" />
+          </a>
+        </div>
+        <div>
+          <a href="img/Drawings/i06.jpg">
+            <img src="img/Drawings/i06.jpg" />
+          </a>
+        </div>
+        <div>
+          <a href="img/Drawings/i08.jpg">
+            <img src="img/Drawings/i08.jpg" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="https://github.com/msgabriel" target="_blank" rel="noreferrer">github</a>
+          <a href="https://codepen.io/msgabriel/" target="_blank" rel="noreferrer">codepen</a>
+          <a href="https://dribbble.com/msgabriel" target="_blank" rel="noreferrer">dribbble</a>
+        </div>
+        <div class="copy">
+          <p>designed & built by Mónica Gabriel</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="libs/simpleLightbox.min.js"></script>
+    <script src="libs/autosize.min.js"></script>
+    <script src="libs/lazysizes.min.js"></script>
+    <script>
+      // lightbox
+      new SimpleLightbox({ elements: '.gallery a' });
+      // autoresize textarea
+      autosize(document.querySelector('textarea'));
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
