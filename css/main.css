@@ -582,6 +582,9 @@ blockquote > cite:before {
   #about .name {
     max-width: 96px;
   }
+  footer .container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 424px) {
