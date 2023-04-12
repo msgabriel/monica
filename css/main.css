@@ -459,7 +459,7 @@ footer .copy {
 .social-links a {
   font-weight: var(--fw-bold);
   color: var(--neutral-90);
-  padding-right: 16px;
+  padding: 0 8px;
 }
 .social-links a:hover {
   color: var(--accent);
