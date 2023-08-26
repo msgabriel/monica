@@ -263,10 +263,6 @@ body {
   text-transform: lowercase;
   font-weight: 400;
 }
-/* honeyopot */
-.hidden {
-  display: none !important;
-}
 
 .skip-link {
   font-size: var(--fs-500);
