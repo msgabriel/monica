@@ -1,164 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events | Monica Gabriel</title>
-    <meta name="description" content="Monica's Portfolio, a creative and front-end developer based in Portugal" />
-    <meta name="author" content="Monica Gabriel" />
-    <meta name="keywords" content="photographer,videographer,designer,developer,creative" />
 
-    <meta property="og:title" content="Monica Gabriel" />
-    <meta property="og:url" content="https://monica.pt" />
-    <meta property="og:image" content="https://monica.pt/img/monica-og.jpg" />
-    <meta
-      property="og:description"
-      content="Monica's Portfolio, a creative and front-end developer based in Portugal" />
-    <meta property="og:site_name" content="Monica" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Monica Gabriel</title>
+  <meta name="description" content="work and projects of a creative front-end developer based in Portugal" />
+  <meta name="keywords" content="developer, artist, streamer" />
+  <link rel="canonical" href="https://monica.pt">
 
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  <meta property="og:title" content="Monica Gabriel" />
+  <meta property="og:description" content="work and projects of a creative front-end developer based in Portugal" />
+  <meta property="og:image" content="https://monica.pt/ogp.jpg" />
+  <meta property="og:url" content="https://monica.pt" />
 
-    <!-- Ligthbox -->
-    <link rel="stylesheet" href="css/simpleLightbox.min.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
-  <body>
-    <!-- NAVBAR -->
-    <nav id="navbar">
-      <div class="container">
-        <div class="logo">
-          <a href="/">Monica</a>
-        </div>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-        <div class="nav-toggle">
-          <span class="bar" aria-hidden="true"></span>
-          <span class="bar" aria-hidden="true"></span>
-          <span class="bar" aria-hidden="true"></span>
-          <span class="sr-only">menu</span>
-        </div>
-
-        <div class="nav-links">
-          <a href="/#about">about</a>
-          <a href="/#frontend">front end</a>
-          <a href="/#creative">creative</a>
-          <a href="#" id="contact-toggle">contact</a>
-        </div>
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="/">Monica</a>
       </div>
-    </nav>
 
-    <!-- CONTACT -->
-    <div id="contact">
-      <div class="container">
-        <p class="color">hello</p>
-        <h3 class="line">let's chat</h3>
+      <div class="nav-toggle">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="sr-only">menu</span>
+      </div>
 
-        <form
-          action="/#mailsuccess"
-          method="post"
-          name="contact"
-          spellcheck="false"
-          autocapitalize="off">
-          <span class="close"></span>
-
-          <label for="name">name</label>
-          <input type="text" name="name" id="name" autocomplete="off" required />
-          <label for="email">email</label>
-          <input type="email" name="email" id="email" autocomplete="email" required />
-          <label for="message">message</label>
-          <textarea name="message" id="message" required rows="4"></textarea>
-          <button type="submit" name="submit">send</button>
-        </form>
+      <div class="nav-links">
+        <a href="/#about">about</a>
+        <a href="/#frontend">front end</a>
+        <a href="/#creative">creative</a>
+        <a href="#" id="contact-toggle">contact</a>
       </div>
     </div>
+  </nav>
 
-    <div id="contact-msg">
-      <div class="container">
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="container">
+      <p class="color">hello</p>
+      <h3 class="line">let's chat</h3>
+
+      <form action="/#mailsuccess" method="post" name="contact" spellcheck="false" autocapitalize="off">
         <span class="close"></span>
-        <h3 class="line">Thank you!</h3>
-        <p>Your message was sent</p>
+
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" autocomplete="off" required />
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" autocomplete="email" required />
+        <label for="message">message</label>
+        <textarea name="message" id="message" required rows="4"></textarea>
+        <button type="submit" name="submit">send</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="contact-msg">
+    <div class="container">
+      <span class="close"></span>
+      <h3 class="line">Thank you!</h3>
+      <p>Your message was sent</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section id="portfolio">
+    <header>
+      <div class="container">
+        <h2 class="line">Events</h2>
+        <p>theatre &amp; performance photography</p>
+      </div>
+    </header>
+
+    <div class="container is-grid gallery">
+      <img alt src="img/events/01_events.jpg" />
+      <img alt src="img/events/02_events.jpg" />
+      <img alt src="img/events/12_events.jpg" />
+      <img alt src="img/events/03_events.jpg" />
+      <img alt src="img/events/04_events.jpg" />
+      <img alt src="img/events/05_events.jpg" />
+      <img alt src="img/events/08_events.jpg" />
+      <img alt src="img/events/11_events.jpg" />
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/msgabriel" target="_blank" rel="noreferrer">github</a>
+        <a href="https://codepen.io/msgabriel/" target="_blank" rel="noreferrer">codepen</a>
+        <a href="https://dribbble.com/msgabriel" target="_blank" rel="noreferrer">dribbble</a>
+      </div>
+      <div class="copy">
+        <p>designed & built by Mónica Gabriel</p>
       </div>
     </div>
+  </footer>
 
-    <!-- CONTENT -->
-    <section id="portfolio">
-      <header>
-        <div class="container">
-          <h2 class="line">Events</h2>
-          <p>theatre &amp; performance photography</p>
-        </div>
-      </header>
+  <script src="js/main.js"></script>
+  <script src="js/autosize.min.js"></script>
+  <script>
+    autosize(document.querySelector('textarea'));
+  </script>
+</body>
 
-      <div class="container is-grid gallery">
-        <div>
-          <a href="img/Events/01_events.jpg">
-            <img alt src="img/Events/01_events_small.jpg" />
-          </a>
-        </div>
-        <div>
-          <a href="img/Events/02_events.jpg">
-            <img alt src="img/Events/02_events_small.jpg" />
-          </a>
-        </div>
-        <div>
-          <a href="img/Events/12_events.jpg">
-            <img alt src="img/Events/12_events_small.jpg" />
-          </a>
-        </div>
-        <div>
-          <a href="img/Events/03_events.jpg">
-            <img alt src="img/Events/03_events_small.jpg" />
-          </a>
-        </div>
-        <div>
-          <a href="img/Events/04_events.jpg">
-            <img alt src="img/Events/04_events_small.jpg" />
-          </a>
-        </div>
-        <div>
-          <a href="img/Events/05_events.jpg">
-            <img alt src="img/Events/05_events_small.jpg" />
-          </a>
-        </div>
-        <div>
-          <a href="img/Events/08_events.jpg">
-            <img alt src="img/Events/08_events_small.jpg" />
-          </a>
-        </div>
-        <div>
-          <a href="img/Events/11_events.jpg">
-            <img alt src="img/Events/11_events_small.jpg" />
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <div class="social-links">
-          <a href="https://github.com/msgabriel" target="_blank" rel="noreferrer">github</a>
-          <a href="https://codepen.io/msgabriel/" target="_blank" rel="noreferrer">codepen</a>
-          <a href="https://dribbble.com/msgabriel" target="_blank" rel="noreferrer">dribbble</a>
-        </div>
-        <div class="copy">
-          <p>designed & built by Mónica Gabriel</p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="libs/simpleLightbox.min.js"></script>
-    <script src="libs/autosize.min.js"></script>
-    <script src="libs/lazysizes.min.js"></script>
-    <script>
-      // lightbox
-      new SimpleLightbox({ elements: '.gallery a' });
-      // autoresize textarea
-      autosize(document.querySelector('textarea'));
-    </script>
-    <script src="js/main.js"></script>
-  </body>
 </html>
