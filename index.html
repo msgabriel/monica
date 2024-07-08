@@ -1,324 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monica Gabriel</title>
-    <meta name="description" content="Monica's Portfolio, a creative and front-end developer based in Portugal" />
-    <meta name="author" content="Monica Gabriel" />
-    <meta name="keywords" content="photographer,videographer,designer,developer,creative" />
 
-    <meta property="og:title" content="Monica Gabriel" />
-    <meta property="og:url" content="https://monica.pt" />
-    <meta property="og:image" content="https://monica.pt/img/monica-og.jpg" />
-    <meta
-      property="og:description"
-      content="Monica's Portfolio, a creative and front-end developer based in Portugal" />
-    <meta property="og:site_name" content="Monica" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monica Gabriel</title>
+  <meta name="description" content="work and projects of a creative front-end developer based in Portugal" />
+  <meta name="keywords" content="developer, artist, streamer" />
+  <link rel="canonical" href="https://monica.pt">
 
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  <meta property="og:title" content="Monica Gabriel" />
+  <meta property="og:description" content="work and projects of a creative front-end developer based in Portugal" />
+  <meta property="og:image" content="https://monica.pt/ogp.jpg" />
+  <meta property="og:url" content="https://monica.pt" />
 
-    <!-- Ligthbox -->
-    <link rel="stylesheet" href="css/simpleLightbox.min.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
-  <body>
-    <!-- NAVBAR -->
-    <nav id="navbar">
-      <div class="container">
-        <div class="logo">
-          <a href="/">Monica</a>
-        </div>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-        <div class="nav-toggle">
-          <span class="bar" aria-hidden="true"></span>
-          <span class="bar" aria-hidden="true"></span>
-          <span class="bar" aria-hidden="true"></span>
-          <span class="sr-only">menu</span>
-        </div>
-
-        <div class="nav-links">
-          <a href="#about" class="anchor">about</a>
-          <a href="#frontend" class="anchor">front end</a>
-          <a href="#creative" class="anchor">creative</a>
-          <a href="#" id="contact-toggle">contact</a>
-        </div>
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="/">Monica</a>
       </div>
-    </nav>
 
-    <!-- CONTACT -->
-    <div id="contact">
-      <div class="container">
-        <p class="color">hello</p>
-        <h3 class="line">let's chat</h3>
+      <div class="nav-toggle">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="sr-only">menu</span>
+      </div>
 
-        <form
-          action="/#mailsuccess"
-          method="post"
-          name="contact"
-          spellcheck="false"
-          autocapitalize="off">
-          <span class="close"></span>
-
-          <label for="name">name</label>
-          <input type="text" name="name" id="name" autocomplete="off" required />
-          <label for="email">email</label>
-          <input type="email" name="email" id="email" autocomplete="email" required />
-          <label for="message">message</label>
-          <textarea name="message" id="message" required rows="4"></textarea>
-          <button type="submit" name="submit">send</button>
-        </form>
+      <div class="nav-links">
+        <a href="#about" class="anchor">about</a>
+        <a href="#frontend" class="anchor">front end</a>
+        <a href="#creative" class="anchor">creative</a>
+        <a href="#" id="contact-toggle">contact</a>
       </div>
     </div>
+  </nav>
 
-    <div id="contact-msg">
-      <div class="container">
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="container">
+      <p class="color">hello</p>
+      <h3 class="line">let's chat</h3>
+
+      <form action="/#mailsuccess" method="post" name="contact" spellcheck="false" autocapitalize="off">
         <span class="close"></span>
-        <h3 class="line">Thank you!</h3>
-        <p>Your message was sent</p>
+
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" autocomplete="off" required />
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" autocomplete="email" required />
+        <label for="message">message</label>
+        <textarea name="message" id="message" required rows="4"></textarea>
+        <button type="submit" name="submit">send</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="contact-msg">
+    <div class="container">
+      <span class="close"></span>
+      <h3 class="line">Thank you!</h3>
+      <p>Your message was sent</p>
+    </div>
+  </div>
+
+  <!-- ABOUT  -->
+  <section id="about">
+    <div class="container">
+      <img src="img/animated-avatar.gif" class="portrait" alt="profile picture" width="300" height="300" />
+      <p class="color">hello, i'm</p>
+      <img class="name" src="img/name.svg" alt="monica" />
+      <h2 class="line">a front-end developer that loves everything visual</h2>
+      <p>
+        i have developed a variety of digital experiences, ranging from large-scale single-page applications to
+        interactive campaigns at a global marketing agency
+      </p>
+      <p>i'm also a hobbyist illustrator and music addict with a degree in sound and image</p>
+      <div class="social-links">
+        <a href="https://github.com/msgabriel" target="_blank" rel="noreferrer">github</a>
+        <a href="https://codepen.io/msgabriel/" target="_blank" rel="noreferrer">codepen</a>
+        <a href="https://dribbble.com/msgabriel" target="_blank" rel="noreferrer">dribbble</a>
+      </div>
+      <div class="skills">
+        <h2 class="line">skills & tools</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>Typescript</li>
+          <li>Git</li>
+        </ul>
+        <ul>
+          <li>UI/UX</li>
+          <li>Figma</li>
+          <li>Photoshop</li>
+          <li>Photography</li>
+        </ul>
+      </div>
+      <div class="skip-link">
+        <a href="#frontend" class="anchor">projects</a>
+        <a href="#frontend" class="anchor"><span class="arrow"></span></a>
       </div>
     </div>
+  </section>
 
-    <!-- ABOUT  -->
-    <section id="about">
-      <div class="container">
-        <img src="img/animated-avatar.gif" class="portrait" alt="profile picture" width="300" height="300" />
-        <p class="color">hello, i'm</p>
-        <img class="name" src="img/name.svg" alt="monica" />
-        <h2 class="line">a front-end developer that loves everything visual</h2>
-        <p>
-          i have developed a variety of digital experiences, ranging from large-scale single-page applications to
-          interactive campaigns at a global marketing agency
-        </p>
-        <p>i'm also a hobbyist illustrator and music addict with a degree in sound and image</p>
-        <div class="social-links">
-          <a href="https://github.com/msgabriel" target="_blank" rel="noreferrer">github</a>
-          <a href="https://codepen.io/msgabriel/" target="_blank" rel="noreferrer">codepen</a>
-          <a href="https://dribbble.com/msgabriel" target="_blank" rel="noreferrer">dribbble</a>
-        </div>
-        <div class="skills">
-          <h2 class="line">skills & tools</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Typescript</li>
-            <li>Git</li>
-          </ul>
-          <ul>
-            <li>UI/UX</li>
-            <li>Figma</li>
-            <li>Photoshop</li>
-            <li>Photography</li>
-          </ul>
-        </div>
-        <div class="skip-link">
-          <a href="#frontend" class="anchor">projects</a>
-          <a href="#frontend" class="anchor"><span class="arrow"></span></a>
-        </div>
-      </div>
-    </section>
+  <!-- WEB -->
+  <section id="frontend">
+    <p class="color">front-end</p>
+    <h2 class="line">experiments & open-source</h2>
+    <p>here are some personal projects i&apos;ve built along my learning journey</p>
 
-    <!-- WEB -->
-    <section id="frontend">
-      <p class="color">front-end</p>
-      <h2 class="line">experiments & open-source</h2>
-      <p>here are some personal projects i&apos;ve built along my learning journey</p>
-
-      <div class="container is-grid">
-        <div class="project">
-          <div class="project-img">
-            <div class="overlay">
-              <div class="links">
-                <a class="primary" href="https://new-tab-homepage.netlify.app/" target="_blank" rel="noreferrer"
-                  >live demo</a
-                >
-                <a href="https://github.com/msgabriel/new-tab-homepage" target="_blank" rel="noreferrer">source code</a>
-              </div>
-            </div>
-            <img data-src="img/new-tab.jpg" alt="calculator" width="600" height="400" class="lazyload" />
-          </div>
-          <div class="project-info">
-            <p class="project-title">New Tab Homepage</p>
-            <p>a replacement for the browser&apos;s new tab</p>
-            <div class="stack">
-              <ul>
-                <li>react</li>
-                <li>typescript</li>
-                <li>sass</li>
-                <li>weather api</li>
-                <li>geolocation api</li>
-              </ul>
+    <div class="container is-grid">
+      <div class="project">
+        <div class="project-img">
+          <div class="overlay">
+            <div class="links">
+              <a class="primary" href="https://new-tab-homepage.netlify.app/" target="_blank" rel="noreferrer">live
+                demo</a>
+              <a href="https://github.com/msgabriel/new-tab-homepage" target="_blank" rel="noreferrer">source code</a>
             </div>
           </div>
+          <img data-src="img/new-tab.jpg" alt="calculator" width="600" height="400" class="lazyload" />
         </div>
-
-        <div class="project">
-          <div class="project-img">
-            <div class="overlay">
-              <div class="links">
-                <a class="primary" href="https://msgabriel.github.io/etch-a-sketch/" target="_blank" rel="noreferrer"
-                  >live demo</a
-                >
-                <a href="https://github.com/msgabriel/etch-a-sketch" target="_blank" rel="noreferrer">source code</a>
-              </div>
-            </div>
-            <img data-src="img/etch-a-sketch.jpg" alt="Etch-a-Sketch" width="600" height="400" class="lazyload" />
-          </div>
-          <div class="project-info">
-            <p class="project-title">Etch-a-Sketch</p>
-            <p class="description">drawing app built entirely with vanilla javascript</p>
-            <div class="stack">
-              <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-img">
-            <div class="overlay">
-              <div class="links">
-                <a
-                  class="primary"
-                  href="https://msgabriel.github.io/rock-paper-scissors/"
-                  target="_blank"
-                  rel="noreferrer"
-                  >live demo</a
-                >
-                <a href="https://github.com/msgabriel/rock-paper-scissors" target="_blank" rel="noreferrer"
-                  >source code</a
-                >
-              </div>
-            </div>
-            <img
-              data-src="img/rock-paper-scissors.jpg"
-              alt="rock paper scissors game"
-              width="600"
-              height="400"
-              class="lazyload" />
-          </div>
-          <div class="project-info">
-            <p class="project-title">Rock Paper Scissors</p>
-            <p class="description">my very first javascript game</p>
-            <div class="stack">
-              <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-img">
-            <div class="overlay">
-              <div class="links">
-                <a class="primary" href="https://codepen.io/msgabriel/full/VgzaYN" target="_blank" rel="noreferrer"
-                  >codepen</a
-                >
-              </div>
-            </div>
-            <img data-src="img/new-balance.jpg" alt="new balance mobile ad" width="600" height="400" class="lazyload" />
-          </div>
-          <div class="project-info">
-            <p class="project-title">New Balance</p>
-            <p>fake mobile ad that got me my first job</p>
-            <div class="stack">
-              <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
-              </ul>
-            </div>
+        <div class="project-info">
+          <p class="project-title">New Tab Homepage</p>
+          <p>a replacement for the browser&apos;s new tab</p>
+          <div class="stack">
+            <ul>
+              <li>react</li>
+              <li>typescript</li>
+              <li>sass</li>
+              <li>weather api</li>
+              <li>geolocation api</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ART -->
-    <section id="creative">
-      <p class="color">creative</p>
-      <h2 class="line">portfolio</h2>
-      <p>here are some of the pictures i&apos;m most proud of, along with some illustrations i did for fun</p>
-
-      <div class="container is-grid">
-        <div class="project">
-          <div class="project-img">
-            <a href="miss-frimor">
-              <img data-src="img/misses.jpg" alt="miss frimor" width="600" height="400" class="lazyload" />
-            </a>
+      <div class="project">
+        <div class="project-img">
+          <div class="overlay">
+            <div class="links">
+              <a class="primary" href="https://msgabriel.github.io/etch-a-sketch/" target="_blank" rel="noreferrer">live
+                demo</a>
+              <a href="https://github.com/msgabriel/etch-a-sketch" target="_blank" rel="noreferrer">source code</a>
+            </div>
           </div>
-          <div class="project-info"><p class="project-title">Miss Frimor</p></div>
+          <img data-src="img/etch-a-sketch.jpg" alt="Etch-a-Sketch" width="600" height="400" class="lazyload" />
         </div>
-
-        <div class="project">
-          <div class="project-img">
-            <a href="events">
-              <img data-src="img/events.jpg" alt="events" width="600" height="400" class="lazyload" />
-            </a>
-          </div>
-          <div class="project-info">
-            <p class="project-title">Events</p>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-img">
-            <a href="wanderings">
-              <img data-src="img/wanderings.jpg" alt="wanderings" width="600" height="400" class="lazyload" />
-            </a>
-          </div>
-          <div class="project-info">
-            <p class="project-title">Wanderings</p>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-img">
-            <a href="illustration">
-              <img data-src="img/ilustration.jpg" alt="illustration" width="600" height="400" class="lazyload" />
-            </a>
-          </div>
-          <div class="project-info">
-            <p class="project-title">Illustrations</p>
+        <div class="project-info">
+          <p class="project-title">Etch-a-Sketch</p>
+          <p class="description">drawing app built entirely with vanilla javascript</p>
+          <div class="stack">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
 
-    <footer>
-      <div class="container">
-        <div class="social-links">
-          <a href="https://github.com/msgabriel" target="_blank" rel="noreferrer">github</a>
-          <a href="https://codepen.io/msgabriel/" target="_blank" rel="noreferrer">codepen</a>
-          <a href="https://dribbble.com/msgabriel" target="_blank" rel="noreferrer">dribbble</a>
+      <div class="project">
+        <div class="project-img">
+          <div class="overlay">
+            <div class="links">
+              <a class="primary" href="https://msgabriel.github.io/rock-paper-scissors/" target="_blank"
+                rel="noreferrer">live demo</a>
+              <a href="https://github.com/msgabriel/rock-paper-scissors" target="_blank" rel="noreferrer">source
+                code</a>
+            </div>
+          </div>
+          <img data-src="img/rock-paper-scissors.jpg" alt="rock paper scissors game" width="600" height="400"
+            class="lazyload" />
         </div>
-        <div class="copy">
-          <p>designed & built by Mónica Gabriel</p>
+        <div class="project-info">
+          <p class="project-title">Rock Paper Scissors</p>
+          <p class="description">my very first javascript game</p>
+          <div class="stack">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
 
-    <script src="libs/simpleLightbox.min.js"></script>
-    <script src="libs/autosize.min.js"></script>
-    <script src="libs/lazysizes.min.js"></script>
-    <script>
-      // lightbox
-      new SimpleLightbox({ elements: '.gallery a' });
-      // autoresize textarea
-      autosize(document.querySelector('textarea'));
-    </script>
-    <script src="js/main.js"></script>
-  </body>
+      <div class="project">
+        <div class="project-img">
+          <div class="overlay">
+            <div class="links">
+              <a class="primary" href="https://codepen.io/msgabriel/full/VgzaYN" target="_blank"
+                rel="noreferrer">codepen</a>
+            </div>
+          </div>
+          <img data-src="img/new-balance.jpg" alt="new balance mobile ad" width="600" height="400" class="lazyload" />
+        </div>
+        <div class="project-info">
+          <p class="project-title">New Balance</p>
+          <p>fake mobile ad that got me my first job</p>
+          <div class="stack">
+            <ul>
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ART -->
+  <section id="creative">
+    <p class="color">creative</p>
+    <h2 class="line">portfolio</h2>
+    <p>here are some of the pictures i&apos;m most proud of, along with some illustrations i did for fun</p>
+
+    <div class="container is-grid">
+      <div class="project">
+        <div class="project-img">
+          <a href="miss-frimor">
+            <img data-src="img/misses.jpg" alt="miss frimor" width="600" height="400" class="lazyload" />
+          </a>
+        </div>
+        <div class="project-info">
+          <p class="project-title">Miss Frimor</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <a href="events">
+            <img data-src="img/events.jpg" alt="events" width="600" height="400" class="lazyload" />
+          </a>
+        </div>
+        <div class="project-info">
+          <p class="project-title">Events</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <a href="wanderings">
+            <img data-src="img/wanderings.jpg" alt="wanderings" width="600" height="400" class="lazyload" />
+          </a>
+        </div>
+        <div class="project-info">
+          <p class="project-title">Wanderings</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <a href="illustration">
+            <img data-src="img/ilustration.jpg" alt="illustration" width="600" height="400" class="lazyload" />
+          </a>
+        </div>
+        <div class="project-info">
+          <p class="project-title">Illustrations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/msgabriel" target="_blank" rel="noreferrer">github</a>
+        <a href="https://codepen.io/msgabriel/" target="_blank" rel="noreferrer">codepen</a>
+        <a href="https://dribbble.com/msgabriel" target="_blank" rel="noreferrer">dribbble</a>
+      </div>
+      <div class="copy">
+        <p>designed & built by Mónica Gabriel</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    autosize(document.querySelector('textarea'));
+  </script>
+  <script src="libs/autosize.min.js"></script>
+  <script src="libs/lazysizes.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
