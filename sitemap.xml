@@ -1,0 +1,27 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://monica.pt/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://monica.pt/events</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://monica.pt/illustrations</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://monica.pt/miss-frimor</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://monica.pt/wanderings</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
